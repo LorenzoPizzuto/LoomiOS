@@ -64,9 +64,7 @@ struct WelcomeView: View {
                 Spacer()
 
                 // Pulsante "Continue"
-                NavigationLink(destination: ContentView()
-                    .navigationBarBackButtonHidden(true) // Nasconde il pulsante back
-                ) {
+                NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
                     Text("Continue")
                         .font(.system(size: 20, weight: .bold))
                         .foregroundColor(.white)
